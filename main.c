@@ -55,7 +55,9 @@ int lowercase (char * word) {
 	
 	} else {
 	
-	    return 0;
+    printf ("palavras vazias ou nulas não são aceitas");
+    
+    return 0;
 	
 	}
 	
@@ -84,6 +86,8 @@ int uppercase (char * word) {
     	return 1;
 	
 	} else {
+
+     printf ("palavras vazias ou nulas não são aceitas");
 		
 		return 0;
 		
@@ -96,7 +100,7 @@ int main ( ) {
 	int changer;
   char word [100];
 	
-	printf ("digite uma frase : ");
+	printf ("digite uma frase de até 100 caracteres : ");
 	scanf ("%s" , word);
 
   printf (" 1 - converter para minúsculo \n 2 - converter para maiúsculo ");
