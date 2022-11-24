@@ -93,15 +93,27 @@ int uppercase (char * word) {
 
 int main ( ) {
 	
-	char word [100];
+	int changer;
+  char word [100];
 	
 	printf ("digite uma frase : ");
 	scanf ("%s" , word);
-	
-	lowercase (word);
-	printf ("%s \n" , word);
-	
-	uppercase (word);
-	printf ("%s" , word);
+
+  printf (" 1 - converter para minúsculo \n 2 - converter para maiúsculo ");
+	scanf ("%d" , & changer);
+
+  if (changer == 1) {
+  
+	    lowercase (word);
+	    printf ("\n resultado : %s" , word);
+    
+    }
+
+  if (changer == 2) {
+    
+	  uppercase (word);
+	  printf ("\n resultado : %s" , word);
+
+    }
 	
 }
